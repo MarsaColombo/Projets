@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="output.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body class="body">
+    <div id="conatainer" class="scroll-container">
+      <!-- Je code la page d'acceuil -->
+      <section id=" welcome-page " class="welcome-page">
+        <!-- Je stylise la barre de navigation -->
+        <section id="navbar">
+          <header id="nav-menu" class="sm-header vsm-header">
+            <div id="nav-close" class="toogle">
+              <ion-icon name="close-outline"></ion-icon>
+            </div>
+            <!-- Logo et titre -->
+            <div id="logo" class="sm-logo-section vsm-logo-section">
+              <ion-icon
+                class="material-symbols-outlined"
+                name="accessibility-outline"
+              ></ion-icon>
+              <h1 class="ml-2 text-2xl font-bold">Portfolio</h1>
+            </div>
+            <!-- Menu -->
+            <div id="menu ">
+              <ul class="sm-menu-ul vsm-menu-ul">
+                <li class="sm-btn vsm-btn" id="moi">
+                  <a href="#about-me" class="nav__link active"
+                    >À propos de moi</a
+                  >
+                </li>
+                <li class="sm-btn vsm-btn" id="projets-moi">
+                  <a href="#projets" class="nav__link active">Mes projets</a>
+                </li>
+                <li class="sm-btn vsm-btn" id="contact-moi">
+                  <a href="#contact" class="nav__link active">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Bouton CV -->
+            <div class="sm-cv_reseaux vsm-cv_reseaux">
+              <div class="sm-reseaux-logo vsm-reseaux-logo">
+                <ion-icon name="logo-linkedin" class="logo"></ion-icon>
+                <ion-icon name="logo-github" class="logo"></ion-icon>
+                <ion-icon name="logo-discord" class="logo"></ion-icon>
+              </div>
+              <div>
+                <button class="sm-cv vsm-cv">
+                  <span>CV</span>
+                </button>
+              </div>
+            </div>
+          </header>
+        </section>
+
+        <!-- J'enveloppe le reste des fichiers dans un conteneur pour effacer tous le contenu lorsque la nav est ouverte -->
+
+        <!-- Je code le page d'acceuil -->
+        <!-- LE HEADER -->
+
+        <main class="vsm-main">
+          <div class="h-16 w-full flex flex-row justify-between content-center">
+            <ion-icon
+              name="menu-outline"
+              id="toogleMenu"
+              class="toogle"
+            ></ion-icon>
+          </div>
+          <!-- Le contenu -->
+          <div class="sm-acceuil vsm-acceuil">
+            <div id="welcome " class="sm-welcome-quote vsm-welcome-quote">
+              <span class="text-start h-8 text-3xl font-bold italic"
+                >Hello, There</span
+              >
+              <span class="text-start text-5xl font-semibold"
+                >I'm Tim Biaou</span
+              >
+              <span class="text-start text-xl font-medium"
+                >let's discover me through this site</span
+              >
+            </div>
+
+            <div class="sm-photo-div vsm-photo-div">
+              <div class="h-92 w-92 space-x-8 lg:h-[400px] lg:py-5">
+                <img
+                  src="../public/photo-profile.jpeg"
+                  alt="Photo de profil"
+                  class="object-fill rounded-full max-h-full max-w-full vsm-acceuil-image"
+                />
+              </div>
+            </div>
+          </div>
+        </main>
+      </section>
+
+      <!-- Je code la page a propos de moi -->
+      <section id="about-me" class="sm-about-me vsm-about-me section-scroll">
+        <div
+          id="about-container"
+          class="sm-about-container vsm-about-container"
+        >
+          <!-- La section about me -->
+
+          <div class="mx-12">
+            <div id="about-side" class="sm-about-side vsm-about-side">
+              <span>About Me</span>
+            </div>
+            <div id="about-content" class="sm-about-content vsm-about-content">
+              <p class="sm-p-content">
+                Passionné de judo, amateur de cuisine méditerranéenne, adepte de
+                la mode et mélomane. Mon portfolio de développeur web reflète ma
+                diversité d'intérêts, transformant ces passions en code créatif
+                et innovant. Explorez pour en savoir plus.
+              </p>
+            </div>
+          </div>
+
+          <!-- La section mes passions -->
+
+          <div
+            id="about-passions  "
+            class="sm-passions-container vsm-passions-container"
+          >
+            <div
+              class="sm:col-start-1 sm:col-span-1 bg-plats sm-about-image vsm-about-image"
+            ></div>
+            <div
+              class="sm:col-start-2 sm:col-span-1 bg-vynile sm-about-image vsm-about-image"
+            ></div>
+            <div
+              class="sm:col-start-1 sm:col-span-2 bg-judo sm-about-image vsm-about-image"
+            ></div>
+            <div
+              class="sm:col-start-1 sm:col-span-2 bg-dressing sm-about-image vsm-about-image"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Je code la page mes projets -->
+
+      <section id="projets" class="sm-projets-container vsm-projets-container">
+        <div class="w-full h-screen">
+          <div
+            id="header"
+            class="sm-projets-header vsm-projets-header sm-reversed-text vsm-reversed-text px-auto"
+          >
+            <h1 class="font-body">Projets</h1>
+          </div>
+
+          <!-- Je cree une galerie de mes projets -->
+          <div id="container" class="sm-projets-content vsm-projets-content">
+            <div
+              id="projets-images
+            "
+              class="sm-projets-images vsm-projets-images"
+            >
+              <div
+                style="background-image: url('/public/sample.jpg')"
+                ;
+                class="sm-project-image vsm-project-image"
+              ></div>
+              <div
+                style="background-image: url('/public/sample.jpg')"
+                class="sm-project-image vsm-project-image"
+                ;
+              ></div>
+              <div
+                style="background-image: url('/public/sample.jpg')"
+                class="sm-project-image vsm-project-image"
+                ;
+              ></div>
+              <div
+                style="background-image: url('/public/sample.jpg')"
+                class="sm-project-image vsm-project-image"
+                ;
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Je code la page contact -->
+      <section id="contact" class="sm-section-contact vsm-section-contact">
+        <div id="contact_title" class="sm-contact-title vsm-contact-title">
+          <h1 class="sm-contact-h1 vsm-contact-h1">Contact</h1>
+        </div>
+
+        <!-- Je cree le formulaire de contact -->
+        <div class="sm-formulaire_contact vsm-formulaire_contact">
+          <div class="sm-formulaire-container vsm-formulaire-container">
+            <h1 class="sm:text-3xl vsm:hidden">Contactez-moi</h1>
+            <p class="sm:align-middle vsm:text-center vsm:mx-5 pt-2">
+              N'hésitez pas à utiliser ce formulaire pour prendre contact avec
+              moi !
+            </p>
+            <form action="/page-traitement-donnees" method="post " class="">
+              <div class="sm-form-div vsm-form-div">
+                <label for="nom">Votre nom</label>
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  placeholder="Martin"
+                  required
+                  class="sm-form-control vsm-form-control sm-form-sizes vsm-form-sizes"
+                />
+              </div>
+              <div class="sm-form-div vsm-form-div">
+                <label for="email">Votre e-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="monadresse@mail.com"
+                  required
+                  class="sm-form-control vsm-form-control sm-form-sizes vsm-form-sizes"
+                />
+              </div>
+              <div class="sm-form-div vsm-form-div">
+                <label for="sujet">Quel est le sujet de votre message ?</label>
+                <select
+                  name="sujet"
+                  id="sujet"
+                  required
+                  class="sm-form-control vsm-form-control sm-form-sizes vsm-form-sizes"
+                >
+                  <option value="" disabled selected hidden>
+                    Choisissez le sujet de votre message
+                  </option>
+                  <option value="probleme-compte">
+                    Problème avec mon compte
+                  </option>
+                  <option value="question-produit">
+                    Question à propos d'un produit
+                  </option>
+                  <option value="suivi-commande">Suivi de ma commande</option>
+                  <option value="autre">Autre...</option>
+                </select>
+              </div>
+              <div class="sm-form-div vsm-form-div">
+                <label for="message">Votre message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Bonjour, je vous contacte car...."
+                  required
+                  class="sm-form-control vsm-form-control h-full p-[15px]"
+                ></textarea>
+              </div>
+              <div class="sm-form-div vsm-form-div">
+                <button
+                  type="submit"
+                  class="sm-form-control vsm-form-control sm-form-btn vsm-form-btn"
+                >
+                  Envoyer mon message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="main.js"></script>
+</html>

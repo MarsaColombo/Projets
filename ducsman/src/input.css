@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Maitree:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Meie+Script&display=swap");
+@layer components {
+  .logo {
+    @apply h-5 w-5;
+  }
+}
+/* Font */
+@layer components {
+  .maitree {
+    @apply font-Maitree;
+  }
+}
+@layer components {
+  .meie {
+    @apply font-Meie;
+  }
+}
+@layer components {
+  .logo-hover {
+    @apply hover:cursor-pointer active:bg-trueGray active:bg-opacity-70 active:rounded-full p-2;
+  }
+}
+
+/* Style generales */
+
+@layer components {
+  .body {
+    @apply h-full w-full bg-gradient-to-br from-fafafa to-coolGrayfa;
+  }
+}
+
+/* Screen under 600px */
+@layer components {
+  .titre-site {
+    @apply w-full h-12 flex justify-center text-center border-b-2 shadow-md bg-gradient-to-br from-blue-300 to-indigo-50;
+  }
+}
+@layer components {
+  .titre {
+    @apply font-Italianno text-3xl bg-clip-text text-darkBlue;
+  }
+}
+@layer components {
+  .menu {
+    @apply w-full fixed bottom-0 bg-gradient-to-br from-blue-300 to-indigo-50 text-darkBlue;
+  }
+}
+@layer components {
+  .menu-li {
+    @apply flex h-10 justify-around items-center p-2;
+  }
+}
+@layer components {
+  .search-filter_bar {
+    @apply w-full flex justify-center content-center text-darkBlue;
+  }
+}
+@layer components {
+  .search-filter_container {
+    @apply w-full flex justify-between items-center bg-transparent;
+  }
+}
+@layer components {
+  .main-page {
+    @apply h-screen w-full flex justify-center content-center pt-0;
+  }
+}
+@layer components {
+  .galerie-section {
+    @apply flex justify-center content-center gap-2;
+  }
+}
+@layer components {
+  .galerie-container {
+    @apply grid grid-cols-2 auto-rows-min gap-5 text-sm;
+  }
+}
+@layer components {
+  .galerie-element {
+    @apply flex flex-col justify-center content-center border-b-2 text-darkGrey;
+  }
+}
+
+/* ClassList */
+.nav-transform {
+}
+
+.img {
+  width: 200px;
+  heigth: 300px;
+}
+
+.produit {
+  font-family: Lobster;
+  color: #303030;
+}
+
+.prix {
+  font-family: Meie;
+  color: #303030;
+}

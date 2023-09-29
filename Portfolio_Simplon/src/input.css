@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Generalites */
+@layer components {
+  body {
+    @apply bg-gradient-to-b from-blue-100 to-slate-200 font-body bg-fixed bg-center;
+  }
+}
+
+@layer components {
+  .welcome-page {
+    @apply w-screen h-screen bg-cover bg-fixed bg-center relative section-scroll;
+  }
+}
+
+@layer components {
+  .section-scroll {
+    @apply snap-start;
+  }
+}
+@layer components {
+  .scroll-container {
+    @apply snap-y snap-mandatory overflow-y-scroll h-[100vh];
+  }
+}
+@layer components {
+  .logo {
+    @apply h-8 w-8;
+  }
+}
+@layer components {
+  .toogle {
+    @apply flex justify-center items-center fixed h-8 w-9 top-5 right-5 border-2 border-black rounded-xl active:shadow-xl active:bg-white;
+  }
+}
+/* Design en sm */
+
+@layer components {
+  .sm-header {
+    @apply sm:h-8 sm:w-screen sm:cursor-pointer sm:flex sm:items-center sm:justify-between sm:px-4 sm:text-lg pt-5;
+  }
+}
+
+@layer components {
+  .sm-logo-section {
+    @apply sm:inline-flex sm:items-center sm:ml-2 sm:text-gray-500 sm:hover:text-black;
+  }
+}
+
+@layer components {
+  .sm-menu-ul {
+    @apply sm:flex sm:items-center sm:gap-4 !important;
+  }
+}
+@layer components {
+  .sm-btn {
+    @apply sm:p-1 sm:border-gray-500 sm:hover:border-black sm:text-gray-500  sm:border-b-2 sm:cursor-pointer;
+  }
+}
+
+@layer components {
+  .sm-cv_reseaux {
+    @apply sm:flex sm:justify-between sm:items-center;
+  }
+}
+@layer components {
+  .sm-cv {
+    @apply sm:h-8 sm:w-20 sm:bg-white sm:text-gray-500 sm:rounded-xl sm:shadow-xl m-5;
+  }
+}
+
+@layer components {
+  .sm-reseaux-logo {
+    @apply sm:flex sm:justify-between gap-3;
+  }
+}
+
+@layer components {
+  .sm-acceuil {
+    @apply sm:w-screen sm:h-screen sm:grid sm:grid-cols-2 sm:grid-rows-1;
+  }
+}
+
+@layer components {
+  .sm-welcome-quote {
+    @apply sm:flex sm:justify-center sm:flex-col sm:gap-2 sm:content-center sm:mx-auto sm:text-gray-600;
+  }
+}
+
+@layer components {
+  .sm-photo-div {
+    @apply sm:py-24 sm:flex sm:items-center sm:justify-center;
+  }
+}
+
+@layer components {
+  .sm-about-me {
+    @apply sm:w-screen sm:h-screen sm:bg-white sm:relative sm:flex sm:text-white;
+  }
+}
+
+@layer components {
+  .sm-about-container {
+    @apply sm:h-4/5 sm:w-full sm:box-border sm:my-auto sm:grid sm:grid-cols-2;
+  }
+}
+
+@layer components {
+  .sm-about-side {
+    @apply sm:h-1/6 sm:bg-gray-500 sm:opacity-50 sm:flex sm:justify-center sm:items-center sm:font-teko sm:font-medium sm:text-6xl sm:rounded-xl;
+  }
+}
+
+@layer components {
+  .sm-about-content {
+    @apply sm:h-5/6 sm:flex sm:justify-center sm:content-center sm:items-center sm:font-teko sm:text-2xl sm:align-middle;
+  }
+}
+
+@layer components {
+  .sm-p-content {
+    @apply sm:h-auto sm:my-4 sm:p-8 sm:bg-gray-500 sm:opacity-50 sm:text-center sm:rounded-xl;
+  }
+}
+
+@layer components {
+  .sm-passions-container {
+    @apply sm:grid sm:grid-rows-3 sm:grid-cols-2 sm:text-black sm:gap-6 sm:mx-12;
+  }
+}
+
+@layer components {
+  .sm-about-image {
+    @apply sm:bg-cover sm:bg-center sm:bg-no-repeat sm:rounded-xl;
+  }
+}
+
+@layer components {
+  .sm-projets-container {
+    @apply sm:w-screen sm:h-screen sm:bg-gray-500 sm:relative sm:section-scroll;
+  }
+}
+
+@layer components {
+  .sm-projets-header {
+    @apply sm:h-1/5 sm:w-full sm:flex sm:justify-items-center sm:justify-center sm:items-center sm:mx-auto;
+  }
+}
+
+@layer components {
+  .sm-projets-content {
+    @apply sm:h-4/5 sm:w-full sm:flex sm:justify-center sm:items-center;
+  }
+}
+
+@layer components {
+  .sm-projets-images {
+    @apply sm:w-[90%] sm:h-3/4 sm:grid sm:grid-rows-1 sm:grid-cols-4 sm:relative sm:gap-3;
+  }
+}
+
+@layer components {
+  .sm-project-image {
+    @apply sm:bg-cover sm:bg-center sm:bg-no-repeat sm:rounded-xl;
+  }
+}
+
+@layer components {
+  .sm-section-contact {
+    @apply sm:h-screen sm:w-screen sm:bg-white sm:text-gray-500 sm:flex sm:flex-col sm:section-scroll;
+  }
+}
+
+@layer components {
+  .sm-contact-title {
+    @apply sm:h-1/5 sm:w-full sm:flex sm:justify-center sm:items-center;
+  }
+}
+
+@layer components {
+  .sm-contact-h1 {
+    @apply sm:font-body sm:text-6xl sm:italic;
+  }
+}
+
+@layer components {
+  .sm-formulaire_contact {
+    @apply sm:h-full sm:w-full sm:flex sm:justify-center sm:items-center sm:border-2 sm:rounded-xl sm:p-6;
+  }
+}
+
+@layer components {
+  .sm-formulaire-container {
+    @apply sm:h-full sm:flex sm:content-center sm:items-center sm:flex-col sm:gap-2;
+  }
+}
+
+@layer components {
+  .sm-form-control {
+    @apply sm:bg-white sm:rounded-lg sm:text-lg sm:font-medium sm:shadow-lg;
+  }
+}
+
+@layer components {
+  .sm-form-sizes {
+    @apply sm:h-12 sm:pl-3;
+  }
+}
+
+@layer components {
+  .sm-reversed-text {
+    @apply sm:bg-gradient-to-b sm:from-blue-100 sm:to-slate-200  sm:text-transparent sm:bg-clip-text sm:text-9xl sm:italic;
+  }
+}
+
+@layer components {
+  .sm-form-div {
+    @apply sm:w-full sm:flex sm:flex-col sm:mt-5;
+  }
+}
+
+@layer components {
+  .sm-form-btn {
+    @apply sm:w-[450px] sm:max-w-[500px] sm:h-[60px];
+  }
+}
+
+/*Je faire les classes pour le small size screen  */
+
+/* Je m'occupe de la barre de navigation */
+
+@layer components {
+  .vsm-header {
+    @apply vsm:h-[100vh] vsm:w-[100%] vsm:flex vsm:flex-col vsm:relative vsm:justify-between;
+  }
+}
+
+@layer components {
+  .vsm-logo-section {
+    @apply vsm:inline-flex vsm:items-center vsm:m-5 vsm:text-gray-500 vsm:hover:text-black;
+  }
+}
+
+@layer components {
+  .vsm-menu-ul {
+    @apply vsm:flex vsm:flex-col vsm:justify-between vsm:gap-8;
+  }
+}
+
+@layer components {
+  .vsm-btn {
+    @apply vsm:border-gray-500 vsm:hover:border-black  vsm:text-gray-500 vsm:border-b-2 vsm:cursor-pointer;
+  }
+}
+
+@layer components {
+  .vsm-cv {
+    @apply vsm:h-12 vsm:w-20 vsm:m-5 vsm:bg-white vsm:text-gray-500 vsm:rounded-xl vsm:shadow-xl vsm:active:bg-gray-500 vsm:active:text-white;
+  }
+}
+
+@layer components {
+  .vsm-cv_reseaux {
+    @apply vsm:inline-flex vsm:flex-row vsm:justify-between vsm:items-center;
+  }
+}
+
+@layer components {
+  .vsm-reseaux-logo {
+    @apply vsm:flex vsm:justify-center vsm:gap-3 vsm:m-5;
+  }
+}
+
+@layer components {
+  .vsm-main {
+    @apply vsm:h-screen vsm:w-screen vsm:flex vsm:flex-col vsm:justify-between;
+  }
+}
+
+@layer components {
+  .vsm-acceuil {
+    @apply vsm:w-screen vsm:h-5/6 vsm:grid vsm:grid-cols-1 vsm:grid-rows-2;
+  }
+}
+
+@layer components {
+  .vsm-welcome-quote {
+    @apply vsm:flex vsm:justify-center vsm:flex-col vsm:gap-2 vsm:mx-auto vsm:text-gray-600;
+  }
+}
+
+@layer components {
+  .vsm-photo-div {
+    @apply vsm:pb-20 vsm:flex vsm:items-center vsm:justify-center;
+  }
+}
+
+@layer components {
+  .vsm-acceuil-image {
+    @apply vsm:h-[250px] vsm:w-[250px];
+  }
+}
+@layer components {
+  .vsm-about-me {
+    @apply vsm:w-screen vsm:h-screen vsm:bg-white vsm:relative vsm:flex vsm:text-white;
+  }
+}
+@layer components {
+  .vsm-about-container {
+    @apply vsm:h-4/5 vsm:w-full vsm:text-gray-500 vsm:box-border vsm:my-auto vsm:grid vsm:grid-rows-2;
+  }
+}
+@layer components {
+  .vsm-about-side {
+    @apply vsm:h-1/6  vsm:flex vsm:justify-center vsm:font-teko vsm:font-medium vsm:text-6xl;
+  }
+}
+@layer components {
+  .vsm-about-content {
+    @apply vsm:h-4/6 vsm:flex vsm:justify-center vsm:content-center vsm:items-center vsm:font-teko vsm:text-xl vsm:text-center;
+  }
+}
+@layer components {
+  .vsm-passions-container {
+    @apply vsm:grid vsm:grid-rows-2 vsm:grid-cols-2 text-gray-500 vsm:gap-3 m-5;
+  }
+}
+@layer components {
+  .vsm-about-image {
+    @apply vsm:bg-cover vsm:bg-center vsm:bg-no-repeat vsm:rounded-xl col-span-1 row-span-1;
+  }
+}
+@layer components {
+  .vsm-projets-container {
+    @apply vsm:w-screen vsm:h-screen vsm:bg-gray-500 vsm:relative vsm:section-scroll;
+  }
+}
+@layer components {
+  .vsm-reversed-text {
+    @apply vsm:bg-gradient-to-b vsm:from-blue-100 vsm:to-slate-200 vsm:inline-block vsm:text-transparent vsm:bg-clip-text vsm:text-6xl vsm:italic;
+  }
+}
+@layer components {
+  .vsm-projets-header {
+    @apply vsm:h-1/6 vsm:w-full vsm:flex vsm:justify-center vsm:items-center;
+  }
+}
+@layer components {
+  .vsm-projets-content {
+    @apply vsm:h-4/5 vsm:w-full vsm:flex vsm:justify-center vsm:items-center;
+  }
+}
+@layer components {
+  .vsm-projets-images {
+    @apply vsm:w-[80%] vsm:h-2/4 vsm:grid vsm:grid-rows-2 vsm:grid-cols-2 vsm:relative vsm:gap-3;
+  }
+}
+
+@layer components {
+  .vsm-project-image {
+    @apply vsm:bg-cover vsm:bg-center vsm:bg-no-repeat vsm:rounded-xl;
+  }
+}
+@layer components {
+  .vsm-section-contact {
+    @apply vsm:h-screen vsm:w-screen vsm:bg-white vsm:text-gray-500 vsm:flex vsm:flex-col vsm:justify-items-center vsm:content-center vsm:section-scroll;
+  }
+}
+
+@layer components {
+  .vsm-contact-title {
+    @apply vsm:h-1/5 vsm:w-full vsm:flex vsm:justify-center vsm:relative vsm:items-center;
+  }
+}
+
+@layer components {
+  .vsm-contact-h1 {
+    @apply vsm:font-body vsm:text-2xl vsm:italic;
+  }
+}
+
+@layer components {
+  .vsm-formulaire_contact {
+    @apply vsm:h-4/5 vsm:w-screen;
+  }
+}
+
+@layer components {
+  .vsm-formulaire-container {
+    @apply vsm:h-[90%] vsm:w-[90%]  vsm:flex vsm:content-center vsm:items-center vsm:align-middle vsm:flex-col vsm:gap-1  vsm:justify-around  vsm:border-2 vsm:rounded-xl vsm:shadow-xl vsm:py-5 vsm:mx-auto;
+  }
+}
+
+@layer components {
+  .vsm-form-div {
+    @apply vsm:w-full vsm:flex vsm:flex-col vsm:content-center vsm:items-center vsm:mt-5;
+  }
+}
+
+@layer components {
+  .vsm-form-control {
+    @apply vsm:bg-white vsm:rounded-md vsm:text-lg vsm:font-medium vsm:shadow-lg;
+  }
+}
+
+@layer components {
+  .vsm-form-sizes {
+    @apply vsm:h-7 vsm:pl-3;
+  }
+}
+
+@layer components {
+  .vsm-form-btn {
+    @apply vsm:w-40 vsm:h-14;
+  }
+}
+
+/* JS attribute input */
+.hide {
+  display: none;
+}
+
+.active {
+  color: black;
+  font-size: 1.25rem;
+}

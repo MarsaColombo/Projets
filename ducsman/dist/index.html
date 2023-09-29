@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ductalio</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="layout.js" defer></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body class="body">
+    <!-- Je stylise le titre de la page -->
+    <div class="titre-site flex flex-col justify-center leading-normal">
+      <h1 class="titre">Ducsman</h1>
+      <p class="titre -mt-3 text-lg">Sapés comme jamais</p>
+    </div>
+
+    <!-- Je commence par faire le Header/ Nav  -->
+    <header class="">
+      <!-- Nav -->
+      <div class="menu">
+        <nav id="navbar" class="menu-li">
+          <ion-icon
+            name="reorder-four-outline"
+            class="logo logo-hover"
+          ></ion-icon>
+          <ion-icon name="heart-outline" class="logo logo-hover"></ion-icon>
+          <ion-icon name="bag-outline" class="logo logo-hover"></ion-icon>
+          <ion-icon name="person-outline" class="logo logo-hover"></ion-icon>
+        </nav>
+      </div>
+      <div class="search-filter_bar">
+        <div class="search-filter_container">
+          <ion-icon
+            name="search-outline"
+            class="logo m-5 logo-hover"
+          ></ion-icon>
+
+          <ion-icon
+            name="options-outline"
+            class="logo m-5 logo-hover"
+          ></ion-icon>
+        </div>
+      </div>
+    </header>
+    <!-- Recherche et filtres -->
+
+    <!-- Je stylise le main  -->
+    <main class="main-page">
+      <!-- Je stylise la galerie -->
+      <section id="galerie" class="galerie-section">
+        <div id="zoneAffichage" class="galerie-container"></div>
+      </section>
+    </main>
+  </body>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+</html>
